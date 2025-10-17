@@ -1,19 +1,29 @@
-// class file for controller class
+// class for controller class
 
 #ifndef GAMECONTROLLER
 #define GAMECONTROLLER
 
-#include "gameObject.h"
+#include "GameObject.h"
 
 class Controller {
-    private::
+    private:
     int gameState;
-    int numEntities = 0;
-    gameObject** gameObjects;
+    int numEntities;
+    GameObject** gameObjects;
+    int score;
     public:
     Controller();
     void setgameState(int gameState);
+    int getGameState();
     void setnumEntities(int numEntities);
+    int getNumEntities();
+    void setScore(int score);
+    int getScore();
+    void gameStart();
+    void gameEnd();
+    void drawMap();
+    void levelStart(int levelNum);
+    // void levelEnd();
 
 };
 

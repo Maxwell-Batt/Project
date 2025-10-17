@@ -2,20 +2,27 @@
 #ifndef GAMEOBJECT
 #define GAMEOBJECT
 
-class gameObject {
+#include <string>
+using namespace std;
+
+class GameObject {
     private:
     int xPosition;
     int yPosition;
     int ID;
+    string name;
 
     public:
-    gameObject()
+    GameObject();
+    GameObject(int xPosition, int yPosition, int ID, string name);
     void setxPosition(int x);
-    void seyyPosition(int y);
-    void setID(int ID);
     int getxPosition();
+    void setyPosition(int y);
     int getyPosition();
+    void setID(int ID);
     int getID();
+    void setName(string name);
+    string getName();
 };
 
 #endif
