@@ -12,7 +12,7 @@ int main() {
         key = getch(); // Read a single character
         printw("\nYou pressed: %c\n", key);
         refresh(); // Update the screen
-    }
+}
     endwin(); // End curses mode
     return 0;
 }
